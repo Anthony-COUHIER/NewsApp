@@ -34,7 +34,7 @@ object DataConstant {
         )
 
         const val defaultHeadlinesPageSize: Int = 20
-        const val defaultAllNewsPageSize: Int = 99
+        const val defaultAllNewsPageSize: Int = 20
 
         @OptIn(FormatStringsInDatetimeFormats::class)
         val dateTimeFormat: DateTimeFormat<LocalDateTime> = LocalDateTime.Format {
