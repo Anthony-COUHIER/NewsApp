@@ -7,6 +7,11 @@ Cette application affiche les actualités à la une en utilisant l'API de [https
 * Un écran principal affichant une liste des articles avec leur titre et image.
 * Un écran de détail présentant plus d'informations sur un article (titre, image, description, et un lien pour lire l'article complet).
 
+| Liste des articles                                 | Détail d'un article                                 |
+|----------------------------------------------------|-----------------------------------------------------|
+| ![Liste des articles](screenshots/home_screen.png) | ![Détail d'un article](screenshots/detail_news.png) |
+
+
 ## Architecture
 
 Pour ce projet, j'ai choisi d'utiliser une architecture Clean. Cette approche permet une meilleure organisation du code et facilite l'extensibilité et la maintenance à long terme.

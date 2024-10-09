@@ -22,7 +22,8 @@ class HomeViewModel(
     private val _uiState: MutableStateFlow<HomeUiState> = MutableStateFlow(HomeUiState())
     val uiState: StateFlow<HomeUiState> = _uiState.asStateFlow()
 
-    val allNewsPagingFlow = getAllNewsUseCase(Locale.getDefault().language).cachedIn(viewModelScope)
+    val allNewsPagingFlow = getAllNewsUseCase(Locale.getDefault().language)
+        .cachedIn(viewModelScope)
 
     init {
         viewModelScope.launch {
@@ -36,10 +37,6 @@ class HomeViewModel(
                         headlineNews = articles
                     )
                 }
-        }
-
-        viewModelScope.launch {
-
         }
     }
 }
