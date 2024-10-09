@@ -5,6 +5,7 @@ import androidx.lifecycle.viewModelScope
 import androidx.paging.cachedIn
 import anthony.project.news.domain.usecase.GetAllNewsUseCase
 import anthony.project.news.domain.usecase.GetTopHeadlinesUseCase
+import anthony.project.news.ui.UiConstant
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -25,7 +26,10 @@ class HomeViewModel(
 
     init {
         viewModelScope.launch {
-            getTopHeadlinesUseCase(country = Locale.getDefault().country, pageSize = 10)
+            getTopHeadlinesUseCase(
+                country = Locale.getDefault().country,
+                pageSize = UiConstant.HomeScreen.HeadlineArticleListSize,
+            )
                 .filter { it.title.isNotBlank() && it.description?.isNotBlank() == true }
                 .let { articles ->
                     _uiState.value = _uiState.value.copy(

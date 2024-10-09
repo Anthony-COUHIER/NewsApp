@@ -17,7 +17,7 @@ data class ArticleDto(
     val content: String?
 ) {
     fun toArticle() = Article(
-        author = author ?: source?.name ?:"",
+        author = author ?: source?.name ?: "",
         title = title,
         description = description ?: "",
         url = url,

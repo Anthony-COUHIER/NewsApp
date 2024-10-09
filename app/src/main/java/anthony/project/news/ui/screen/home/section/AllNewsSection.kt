@@ -27,7 +27,6 @@ import kotlinx.datetime.format.MonthNames
 
 fun LazyListScope.allNewsArticle(
     articles: LazyPagingItems<Article>,
-    modifier: Modifier,
     onItemClicked: (article: Article) -> Unit,
 ) {
     items(articles.itemCount) { index ->

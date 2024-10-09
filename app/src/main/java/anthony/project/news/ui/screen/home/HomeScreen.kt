@@ -62,7 +62,6 @@ fun HomeScreen(
             if (allNewsPagingItems.itemCount > 0) {
                 allNewsArticle(
                     articles = allNewsPagingItems,
-                    modifier = Modifier,
                     onItemClicked = navigateToNewsDetail
                 )
             }

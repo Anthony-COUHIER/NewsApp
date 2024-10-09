@@ -15,7 +15,7 @@ import org.koin.core.annotation.Factory
 @Factory
 class ImplNewsRepository(
     private val newsApi: NewsApi,
-): NewsRepository {
+) : NewsRepository {
 
     override fun getAllNews(language: String): Flow<PagingData<Article>> {
         return Pager(

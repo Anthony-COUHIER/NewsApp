@@ -37,7 +37,9 @@ Les tests unitaires sont principalement situés dans la couche Domain pour s'ass
 
 ## Problèmes identifiés
 
-**Gestion des erreurs** : Le projet gère les erreurs réseau, évite les crash. Une gestion plus sophistiquée pourrait être envisagée pour améliorer l'expérience utilisateur (ex : snackbar spécifiques pour les erreurs).
+* Gestion des erreurs : Le projet gère les erreurs réseau, évite les crash. Une gestion plus sophistiquée pourrait être envisagée pour améliorer l'expérience utilisateur (ex : snackbar spécifiques pour les erreurs).
+* Localisation : L'application est en anglais. Une gestion de la localisation pourrait être ajoutée pour offrir une meilleure expérience aux utilisateurs.
+* Design : L'application est très basique en termes de design. Une amélioration de l'interface utilisateur pourrait être envisagée pour offrir une meilleure expérience utilisateur.
 
 ## Temps consacré
 

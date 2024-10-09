@@ -1,6 +1,5 @@
 package anthony.project.news.ui.common
 
-import android.content.Context
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.material3.MaterialTheme
