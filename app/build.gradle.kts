@@ -61,6 +61,7 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
     testImplementation(libs.junit)
+    testImplementation(libs.kotlinx.coroutines.test)
     testImplementation(libs.mockk)
     androidTestImplementation(libs.mockk.android)
     androidTestImplementation(libs.androidx.junit)
@@ -90,6 +91,7 @@ dependencies {
     implementation(libs.ktor.client.logging)
 
     implementation(libs.paging)
+    implementation(libs.paging.common)
     implementation(libs.paging.compose)
 
     implementation(libs.kotlinx.serialization.json)
